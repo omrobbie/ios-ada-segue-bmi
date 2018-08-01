@@ -20,6 +20,12 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
-
+    @IBAction func unwindEverywhere(segue:UIStoryboardSegue) { }
+    
 }
 
+extension Float {
+    func format(f: String) -> String {
+        return String(format: "%\(f)f", self)
+    }
+}
